@@ -1,0 +1,16 @@
+Tested on OpenSuse Xfce Leap not sure about tumbleweed.
+
+
+Edit /etc/X11/xinit/xinitrc
+
+and add these lines under "# Add your custom code" section
+
+xrandr --newmode "1280x1024_60.00"  108.88  1280 1360 1496 1712  1024 1025 1028 1060  -HSync +Vsync
+xrandr --addmode VGA1 "1280x1024_60.00"
+xrandr --output VGA1 --mode 1280x1024_60.00
+
+That's it!
+
+
+Resource:
+https://forums.opensuse.org/showthread.php/507397-Adjusting-screen-resolution-on-a-system-with-no-monitor-connected?p=2710248#post2710248
