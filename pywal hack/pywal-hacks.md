@@ -24,8 +24,9 @@ Then the command to change that property would be like this
 Change propery and path to image accordingly.
 
 ======================================================
+
 randomwall.sh
---------------
+
 Add this file to crontab or startup applications like this:
 bash /path/to/randomwall.sh
 otherwise it will not work as it calls subshells in the second line
