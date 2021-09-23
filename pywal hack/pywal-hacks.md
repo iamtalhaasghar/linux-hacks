@@ -4,7 +4,7 @@ _Pywal was unable to change background wallpaper on linux mint xfce due to some 
 **NOTE: use colorz (`pip3 install colorz`) as a backend for pywal**
 
 -----------------------------------------------------
-How to change wallpaper on xfce from terminal?
+ [How to change wallpaper on xfce from terminal?](https://forum.xfce.org/viewtopic.php?id=11371)
 -----------------------------------------------------
 
 Xfce uses the Xfconf configuration system. To access the xfconf there is a CLI tool xfconf-query. https://docs.xfce.org/xfce/xfconf/xfconf-query. To find out what property is changed when the backgound changes, run the following command in a terminal window:
