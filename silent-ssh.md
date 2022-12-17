@@ -24,6 +24,7 @@ https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-prope
 
 
 ## Fedora
+https://ask.fedoraproject.org/t/macbook-pro-user-struggles-to-connect-to-wifi-on-fedora-35/17840/4
 
 ## OpenSUSE
 
