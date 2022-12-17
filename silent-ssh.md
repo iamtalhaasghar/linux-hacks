@@ -1,3 +1,5 @@
+## ArchLinux
+
 This answer was posted by [greektex](https://unix.stackexchange.com/users/449362/greektex) on [unix.stackexchange](https://unix.stackexchange.com/questions/627451/unresponsive-ssh-session-in-manjaro-arch-linux-after-using-scp-rsync).
 I have saved it here without any modifications.
 -------------
@@ -19,3 +21,18 @@ The following websites pointed me to the solution:
 https://wiki.archlinux.org/index.php/Broadcom_wireless#SSH_freeze_for_BCM4331_with_b43
 
 https://archived.forum.manjaro.org/t/broadcom-wifi-driver-fails-to-install-properly
+
+
+## Fedora
+
+## OpenSUSE
+
+With old chipsets like BCM430,BCM4306, BCM4309, BCM4311, BCM4312, BCM4318, BCM4322, BCM4331, BCM43224 y BCM43225 We will only introduce the following commands (connected to the Internet via cable).
+```
+sudo zypper install b43-fwcutter
+sudo /usr/sbin/install_bcm43xx_firmware
+```
+We reboot and ready
+
+
+https://blog.desdelinux.net/en/instalar-controladores-broadcom-en-opensuse/
