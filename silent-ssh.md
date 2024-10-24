@@ -1,3 +1,5 @@
+# Installing wifi drivers on Macbook Pro 2012 [MacBookPro9,2 1.0]
+
 ## ArchLinux
 
 This answer was posted by [greektex](https://unix.stackexchange.com/users/449362/greektex) on [unix.stackexchange](https://unix.stackexchange.com/questions/627451/unresponsive-ssh-session-in-manjaro-arch-linux-after-using-scp-rsync).
@@ -37,3 +39,15 @@ We reboot and ready
 
 
 https://blog.desdelinux.net/en/instalar-controladores-broadcom-en-opensuse/
+
+## Ubuntu
+First, make sure you can make an internet connection with a cable. A basic Bluetooth tethering should work.
+
+Next, paste the following commands in the terminal
+
+```
+sudo apt-get update
+sudo apt-get purge bcmwl-kernel-source
+sudo apt-get install firmware-b43-installer
+```
+https://askubuntu.com/a/1394997/1626464
