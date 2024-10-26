@@ -40,14 +40,19 @@ We reboot and ready
 
 https://blog.desdelinux.net/en/instalar-controladores-broadcom-en-opensuse/
 
-## Ubuntu
-First, make sure you can make an internet connection with a cable. A basic Bluetooth tethering should work.
+## Ubuntu 
 
-Next, paste the following commands in the terminal
+### NOTE: This works with Macbook pro 2012 on Ubuntu 24.10
+
+Broadcom [b43](https://wiki.archlinux.org/title/Broadcom_wireless#b43) drivers are reverse engineered version of broadcom drivers and are buggy. In ubuntu i have noticed that with these drivers there is signification packet loss and in arch linux these drivers cause [SSH sessions to freeze](https://wiki.archlinux.org/title/Broadcom_wireless#SSH_freeze_for_BCM4331_with_b43). What we need is [broadcom-wl](https://wiki.archlinux.org/title/Broadcom_wireless#broadcom-wl) drivers. You can install these on Ubuntu as following:
 
 ```
 sudo apt-get update
-sudo apt-get purge bcmwl-kernel-source
-sudo apt-get install firmware-b43-installer
+sudo apt-get install dkms linux-headers-$(uname -r) broadcom-sta-dkms
+
+# insert driver into kernel and update initial ramdisk
+sudo modprobe -rf wl
+sudo modprobe -vv wl
+sudo update-initramfs -c -k all
 ```
-https://askubuntu.com/a/1394997/1626464
+
